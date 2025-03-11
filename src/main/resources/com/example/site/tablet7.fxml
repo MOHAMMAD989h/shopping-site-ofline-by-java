@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3000.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.site.tablet7">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="-4.0" prefHeight="790.0" prefWidth="1543.0" AnchorPane.bottomAnchor="0.7999999999999545" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-3.2000000000000455" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="175.0" prefWidth="1542.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ComboBox fx:id="com1" layoutX="1353.0" layoutY="76.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="175.0" promptText="دسته بندی کالا ها" style="-fx-background-color: f4f4f4;" stylesheets="@style.css">
+                                    <styleClass>
+                                        <String fx:value="head-label" />
+                                        <String fx:value="text-field1" />
+                                    </styleClass>
+                                </ComboBox>
+                                <TextField fx:id="txt1" layoutX="555.2" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="527.0" promptText="جست و جو " stylesheets="@style.css" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="555.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="14.0">
+                                    <styleClass>
+                                        <String fx:value="text-field1" />
+                                        <String fx:value="password" />
+                                    </styleClass>
+                                </TextField>
+                                <Button layoutX="44.0" layoutY="15.0" mnemonicParsing="false" onAction="#tablet7ToProfile" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                                    <graphic>
+                                        <ImageView fx:id="bt1" fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/photo_2025-01-03_12-39-34.png" />
+                                            </image></ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button layoutX="105.0" layoutY="12.0" mnemonicParsing="false" onAction="#sabadpage" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/images.png" />
+                                            </image></ImageView>
+                                    </graphic>
+                                </Button>
+                                <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="568.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/Search.png" />
+                                    </image></ImageView>
+                                <Separator layoutX="1168.0" layoutY="13.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="6.0" />
+                                <Separator layoutX="1.0" layoutY="73.0" prefHeight="0.0" prefWidth="1535.0" />
+                                <Button layoutX="1148.0" layoutY="76.0" mnemonicParsing="false" onAction="#why" prefHeight="50.0" prefWidth="175.0" stylesheets="@style.css" text="چرا لنوو">
+                                    <styleClass>
+                                        <String fx:value="head-label" />
+                                        <String fx:value="button" />
+                                        <String fx:value="text-field1" />
+                                    </styleClass>
+                                </Button>
+                                <Button layoutX="1177.0" layoutY="10.0" mnemonicParsing="false" onAction="#mainpage" prefHeight="51.0" prefWidth="348.0" style="-fx-background-color: #F4F4F4;" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="43.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/Screenshot%202025-01-04%20162459.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="back" layoutX="71.0" layoutY="81.0" mnemonicParsing="false" onAction="#backpage" prefHeight="41.0" prefWidth="30.0" style="-fx-background-color: f4f4f4;" textAlignment="CENTER">
+                                    <graphic>
+                                        <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/return-icon-png-21.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Label fx:id="alart" layoutX="619.0" layoutY="87.0" prefHeight="42.0" prefWidth="455.0" stylesheets="@style.css" textAlignment="CENTER" textFill="#d3005f" textOverrun="CENTER_ELLIPSIS">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <center>
+                        <ScrollPane prefHeight="1586.0" prefWidth="1518.0" BorderPane.alignment="CENTER">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1336.0" prefWidth="1512.0" stylesheets="@style.css">
+                                    <children>
+                                        <ImageView fitHeight="406.0" fitWidth="360.0" layoutX="1126.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                                            <image>
+                                                <Image url="@../../../Images/تبلت/6.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label alignment="CENTER_RIGHT" layoutX="562.0" layoutY="72.0" prefHeight="60.0" prefWidth="502.0" styleClass="text" text="تبلت لنوو Lenovo Tab M9 مدل )&quot;9 MTK)">
+                                            <font>
+                                                <Font name="Franklin Gothic Book" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="183.0" prefHeight="60.0" prefWidth="420.0" styleClass="text" stylesheets="@style.css" text="9,702,000 تومان" textFill="#d3005f">
+                                            <font>
+                                                <Font name="Franklin Gothic Book" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Separator layoutX="585.0" layoutY="125.0" prefHeight="0.0" prefWidth="481.0" />
+                                        <Separator layoutX="585.0" layoutY="181.0" prefHeight="0.0" prefWidth="481.0" />
+                                        <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="123.0" prefHeight="60.0" prefWidth="420.0" styleClass="text" stylesheets="@style.css" text="گارانتی18 لنوو">
+                                            <font>
+                                                <Font name="Franklin Gothic Book" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <AnchorPane layoutX="76.0" layoutY="64.0" prefHeight="198.0" prefWidth="363.0" styleClass="text" stylesheets="@style.css">
+                                            <children>
+                                                <Label alignment="CENTER_RIGHT" layoutX="11.0" layoutY="31.0" prefHeight="46.0" prefWidth="343.0" stylesheets="@style.css" text="فروشنده : لنوو مارکت" textAlignment="RIGHT">
+                                                    <styleClass>
+                                                        <String fx:value="gradient" />
+                                                        <String fx:value="text" />
+                                                        <String fx:value="password" />
+                                                    </styleClass>
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Button layoutX="13.0" layoutY="109.0" mnemonicParsing="false" onAction="#kharid" prefHeight="46.0" prefWidth="343.0" stylesheets="@style.css" text="افزودن به سبد خرید">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                    <styleClass>
+                                                        <String fx:value="login-btn1" />
+                                                        <String fx:value="text" />
+                                                        <String fx:value="password" />
+                                                    </styleClass>
+                                                </Button>
+                                            </children>
+                                        </AnchorPane>
+                                        <Separator layoutX="3.0" layoutY="309.0" prefHeight="0.0" prefWidth="1520.0" />
+                                        <TabPane cache="true" layoutX="4.0" layoutY="328.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="1190.0" prefWidth="1508.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                                <Tab text="معرفی محصول">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                            <children>
+                                                                <Text layoutX="63.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="با انتخاب رنگ خاکستری قطبی یا آبی یخی دو رنگ، شیک بودن خود را باتبلت لنوو Lenovo Tab M9 به حداکثر برسانید.طراحی نازک و سبک این دستگاه را برای استفاده در حین حرکت در هر جایی که زندگی شما را می برد عالی می کند.هنگامی که نمایش‌ها و فیلم‌های مورد علاقه خود را در تب M9 پخش می‌کنید، از یک تجربه سینمایی خیره‌کننده با موبایل لذت ببریدبا صفحه‌نمایش عالی HD، به‌علاوه بلندگوهای استریو دوگانه با Dolby Atmos®، تجربه غوطه‌ وری واقعی را دریافت خواهید کرد.کمی استراحت کنید و بازی های مورد علاقه خود را در تبلت Lenovo Tab M9 انجام دهید. برخورداری از پردازنده قدرتمند MediaTek® Helio G80 هشت هسته‌ایو فضای ذخیره‌سازی فراوان، انجام بازی و مرور، روان و سرگرم‌کننده است.Google Lens به شما امکان می دهد آنچه را که می بینید جستجو کنید، کارها را سریعتر انجام دهید و با دنیای اطراف خود تعامل داشته باشید. متن را ترجمه کنید، در مورد تکالیف کمک بگیرید، یا به سرعت محصولات، گیاهان و مکان ها را شناسایی کنید.تبلت Lenovo Tab M9 نسبت به مدل قبلی یعنی tab m8  برای مدت طولانی‌تری باتری ارائه میدهد و میتوانید خوش گذرانی کنید، آرام باشید و استراحت کنید.و با فضای ذخیره‌سازی کارت microSD قابل ارتقا، کتابخانه‌ای از فیلم‌ها و نمایش‌های مورد علاقه‌تان را در جیب خود نگه دارید.اجازه دهید تبلت Lenovo Tab M9 با حالت خواندن همه جانبه خود که صداهای محیطی را به تجربه خواندن شما می‌افزاید، حال و هوا را ایجاد کند.بعلاوه، با نمایشگرهای گواهی مراقبت از چشم TÜV، چشمان شما نیز می توانند آرامش داشته باشند.هر چیزی که در تب M9 لنوو ذخیره می‌کنید به لطف ویژگی‌های امنیتی پیشرفته مانند ورود آسان و ایمن تشخیص چهره، قفل و کلید است. و با سه سال به روز رسانی امنیتی، می توانید مطمئن شوید که رایانه لوحی خود در آینده ایمن باقی می ماند." textAlignment="JUSTIFY" wrappingWidth="1318.136474609375">
+                                                                    <font>
+                                                                        <Font size="27.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="مشخصات محصول">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="1508.0">
+                                                            <children>
+                                                                <Label alignment="CENTER" prefHeight="62.0" prefWidth="1508.0" text="مشخصات فنی" textFill="#0a85b9">
+                                                                    <font>
+                                                                        <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Text layoutX="42.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="ابعاد : 7.9 × 136.76 × 214.43 میلیمتر" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Text layoutX="42.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="وزن : 344 گرم" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Text layoutX="42.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="پردازنده : Media Tek G80 Processor (2.00 GHz )" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Text layoutX="42.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="سیستم عامل : اندروید 12" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Text layoutX="42.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="مقدار رم : 4 گیگابایت" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Separator layoutX="-119.0" layoutY="232.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                                <Label alignment="CENTER" layoutY="251.0" prefHeight="62.0" prefWidth="1508.0" text="حافظه" textFill="#0a85b9">
+                                                                    <font>
+                                                                        <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Text layoutX="42.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="حافظه داخلی : 64 گیگابایت  – قابلیت نصب کارت حافظه" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Separator layoutX="-89.0" layoutY="433.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                                <Label alignment="CENTER" layoutY="467.0" prefHeight="62.0" prefWidth="1508.0" text="دوربین" textFill="#0a85b9">
+                                                                    <font>
+                                                                        <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Text layoutX="42.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="دوربین :  8 مگاپیکسل فوکوس – وب کم 2 مگاپیکسل" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Separator layoutX="-48.0" layoutY="642.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                                <Label alignment="CENTER" layoutY="651.0" prefHeight="62.0" prefWidth="1508.0" text="خروجی تصویر" textFill="#0a85b9">
+                                                                    <font>
+                                                                        <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                                    </font>
+                                                                </Label>
+                                                                <Text layoutX="42.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="صفحه نمایش : صفحه نمایش لمسی از نوع IPS  – اندازه 9 اینچ – HD (1340 x 800)" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                                <Text layoutX="42.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="باتری : 5100 میلی آمپر ساعت" wrappingWidth="1409.4655151367188">
+                                                                    <font>
+                                                                        <Font size="18.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                            </tabs>
+                                            <styleClass>
+                                                <String fx:value="tab-pane" />
+                                                <String fx:value="ta" />
+                                            </styleClass>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </TabPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1700.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.site.cart1">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="-4.0" prefHeight="790.0" prefWidth="1543.0" AnchorPane.bottomAnchor="0.7999999999999545" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-3.2000000000000455" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="175.0" prefWidth="1542.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ComboBox fx:id="com1" layoutX="1353.0" layoutY="76.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="175.0" promptText="دسته بندی کالا ها" style="-fx-background-color: f4f4f4;" stylesheets="@style.css">
+                                    <styleClass>
+                                        <String fx:value="head-label" />
+                                        <String fx:value="text-field1" />
+                                    </styleClass>
+                                </ComboBox>
+                                <TextField fx:id="txt1" layoutX="555.2" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="527.0" promptText="جست و جو " stylesheets="@style.css" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="555.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="14.0">
+                                    <styleClass>
+                                        <String fx:value="text-field1" />
+                                        <String fx:value="password" />
+                                    </styleClass>
+                                </TextField>
+                                <Button layoutX="44.0" layoutY="15.0" mnemonicParsing="false" onAction="#homeToCart1" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                                    <graphic>
+                                        <ImageView fx:id="bt1" fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/photo_2025-01-03_12-39-34.png" />
+                                 </image></ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button layoutX="105.0" layoutY="12.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/images.png" />
+                                 </image></ImageView>
+                                    </graphic>
+                                </Button>
+                                <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="568.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Search.png" />
+                           </image></ImageView>
+                        <Separator layoutX="1168.0" layoutY="13.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="6.0" />
+                        <Separator layoutX="1.0" layoutY="73.0" prefHeight="0.0" prefWidth="1535.0" />
+                        <Button layoutX="1148.0" layoutY="76.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="175.0" stylesheets="@style.css" text="چرا الکترو شاپ">
+                           <styleClass>
+                              <String fx:value="head-label" />
+                              <String fx:value="button" />
+                              <String fx:value="text-field1" />
+                           </styleClass>
+                        </Button>
+                        <Button layoutX="1177.0" layoutY="10.0" mnemonicParsing="false" onAction="#mainpage" prefHeight="51.0" prefWidth="348.0" style="-fx-background-color: #F4F4F4;" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Screenshot%202025-01-04%20162459.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </top>
+               <center>
+                  <ScrollPane prefHeight="1586.0" prefWidth="1518.0" BorderPane.alignment="CENTER">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1614.0" prefWidth="1512.0" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="198.0" fitWidth="411.0" layoutX="1089.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                                 <image>
+                                    <Image url="@../../../Images/RTX%203060(transparent).png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="72.0" prefHeight="60.0" prefWidth="420.0" styleClass="text" text="کارت گرافیک NVIDIA GeForce RTX 3060">
+                                 <font>
+                                    <Font name="Franklin Gothic Book" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="183.0" prefHeight="60.0" prefWidth="420.0" styleClass="text" stylesheets="@style.css" text="قیمت : 25,000,000 تومان" textFill="#d3005f">
+                                 <font>
+                                    <Font name="Franklin Gothic Book" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="585.0" layoutY="125.0" prefHeight="0.0" prefWidth="481.0" />
+                              <Separator layoutX="585.0" layoutY="181.0" prefHeight="0.0" prefWidth="481.0" />
+                              <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="123.0" prefHeight="60.0" prefWidth="420.0" styleClass="text" stylesheets="@style.css" text="گارانتی18 ماهه الکترو فردا">
+                                 <font>
+                                    <Font name="Franklin Gothic Book" size="24.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="76.0" layoutY="64.0" prefHeight="198.0" prefWidth="363.0" styleClass="text" stylesheets="@style.css">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" layoutX="11.0" layoutY="31.0" prefHeight="46.0" prefWidth="343.0" stylesheets="@style.css" text="فروشنده : الکتروشاپ" textAlignment="RIGHT">
+                                       <styleClass>
+                                          <String fx:value="gradient" />
+                                          <String fx:value="text" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="13.0" layoutY="109.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="343.0" stylesheets="@style.css" text="افزودن به سبد خرید">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="login-btn1" />
+                                          <String fx:value="text" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <Separator layoutX="3.0" layoutY="309.0" prefHeight="0.0" prefWidth="1520.0" />
+                              <TabPane cache="true" layoutX="4.0" layoutY="328.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="1190.0" prefWidth="1508.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="معرفی محصول">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Text layoutX="63.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="کارت گرافیک NVIDIA GeForce RTX 3060 یک انتخاب فوق‌العاده برای گیمرها و تولیدکنندگان محتوا است که به دنبال کارایی بالا با قیمتی مقرون‌به‌صرفه هستند. این کارت، با بهره‌گیری از معماری Ampere شرکت NVIDIA، ترکیبی از فناوری‌های پیشرفته و عملکرد قدرتمند را ارائه می‌دهد.ویژگی‌های برجسته:عملکرد قوی در گیمینگ:با 12 گیگابایت حافظه GDDR6، تجربه بازی در تنظیمات بالا با وضوح 1080p و حتی 1440p را ارائه می‌دهد.نرخ فریم روان و گرافیک جذاب در عناوین AAA.پشتیبانی از فناوری Ray Tracing:نورپردازی واقعی‌تر و سایه‌های دقیق‌تر برای تجربه‌ای نزدیک به واقعیت.استفاده از هسته‌های RT Cores نسل دوم برای پردازش سریع‌تر.تجربه روان در هوش مصنوعی:با بهره‌گیری از هسته‌های Tensor Cores نسل سوم، قابلیت‌های هوش مصنوعی مانند DLSS برای افزایش کیفیت تصویر و نرخ فریم فراهم شده است.خنک‌سازی بهینه:طراحی مناسب سیستم خنک‌کننده، حتی در زمان پردازش‌های سنگین، دمای کارت را کنترل می‌کند.مناسب برای تولیدکنندگان محتوا:عملکرد استثنایی در برنامه‌های ویرایش ویدیو، رندر سه‌بعدی، و طراحی گرافیکی.قابلیت رمزگذاری NVENC برای استریم‌های حرفه‌ای.چرا RTX 3060؟تعادل کامل: عملکرد عالی در کنار قیمت اقتصادی.آینده‌نگری: سازگاری با فناوری‌های روز و پشتیبانی از DirectX 12 Ultimate.طراحی بهینه: مناسب برای کیس‌های مختلف و مصرف برق مقرون‌به‌صرفه.اگر به دنبال یک کارت گرافیک هستید که تمام نیازهای شما از بازی‌های حرفه‌ای تا تولید محتوا را برآورده کند، NVIDIA RTX 3060 انتخاب هوشمندانه‌ای خواهد بود!" textAlignment="JUSTIFY" wrappingWidth="1318.136474609375">
+                                                   <font>
+                                                      <Font size="27.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="مشخصات محصول">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="1508.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="62.0" prefWidth="1508.0" text="مشخصات فنی" textFill="#0a85b9">
+                                                   <font>
+                                                      <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Text layoutX="42.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="ابعاد: 58×140×336 میلی متر" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="تعداد فن: 2" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="مدل تراشه: XTX 14 Na" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="تعداد هسته: 3" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="ریز معماری: RDNA 1X" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="لیتوگرافی: 8 نانومتری" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="فرکانس پایه: 1320 مگاهرتز" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="فرکانس بوست: 1777 مگاهرتز" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="43.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="توان پردازشی: 12.7 ترافالپالس" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Separator layoutX="-119.0" layoutY="232.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                <Label alignment="CENTER" layoutY="251.0" prefHeight="62.0" prefWidth="1508.0" text="حافظه" textFill="#0a85b9">
+                                                   <font>
+                                                      <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Text layoutX="42.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="ظرفیت حافظه: 12 گیگابایت" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="پهنای باند حافظه: 306 گیگابایت بر ثانیه" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="نوع حافظه: 6GD" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="پهنای BUS: 192 بیت" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Separator layoutX="-89.0" layoutY="433.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                <Label alignment="CENTER" layoutY="467.0" prefHeight="62.0" prefWidth="1508.0" text="مصرف انرژی" textFill="#0a85b9">
+                                                   <font>
+                                                      <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Text layoutX="42.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="پهنای BUS: 192 بیت" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="45.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="حداقل توان مصرفی: 500 وات" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="کانکتور برق: 8 پین" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Separator layoutX="-48.0" layoutY="642.0" prefHeight="3.0" prefWidth="1661.0" />
+                                                <Label alignment="CENTER" layoutY="651.0" prefHeight="62.0" prefWidth="1508.0" text="خروجی تصویر" textFill="#0a85b9">
+                                                   <font>
+                                                      <Font name="Franklin Gothic Book Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Text layoutX="42.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="حداکثر رزولوشن خروجی: 4320×7680 پیکسل" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="736.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="درگاه های خروجی: یک درگاه 2.1 HD و سه درگاه Display Port 1.4" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="42.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="حداکثر تعداد مانیتور قابل اتصال: 4" wrappingWidth="1409.4655151367188">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                                 <styleClass>
+                                    <String fx:value="tab-pane" />
+                                    <String fx:value="ta" />
+                                 </styleClass>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

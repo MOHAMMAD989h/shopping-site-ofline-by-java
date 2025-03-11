@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="2038.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.site.edarilap">
+   <children>
+      <BorderPane layoutX="-4.0" prefHeight="790.0" prefWidth="1543.0" AnchorPane.bottomAnchor="0.7999999999999545" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-3.2000000000000455" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="175.0" prefWidth="1542.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ComboBox fx:id="com1" layoutX="1353.0" layoutY="76.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="175.0" promptText="دسته بندی" style="-fx-background-color: f4f4f4;" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="head-label" />
+                        <String fx:value="text-field1" />
+                     </styleClass>
+                  </ComboBox>
+                  <TextField fx:id="txt11" layoutX="555.2" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="527.0" promptText="جست و جو " stylesheets="@style.css" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="555.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="14.0">
+                     <styleClass>
+                        <String fx:value="text-field1" />
+                        <String fx:value="password" />
+                     </styleClass>
+                  </TextField>
+                  <Button layoutX="1177.0" layoutY="10.0" mnemonicParsing="false" onAction="#mainpage" prefHeight="51.0" prefWidth="348.0" style="-fx-background-color: #F4F4F4;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Screenshot%202025-01-04%20162459.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="44.0" layoutY="15.0" mnemonicParsing="false" onAction="#edarilapToProfile" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                     <graphic>
+                        <ImageView fx:id="bt11" fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/photo_2025-01-03_12-39-34.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="105.0" layoutY="12.0" mnemonicParsing="false" onAction="#sabadpage" prefHeight="46.0" prefWidth="37.0" style="-fx-background-color: f4f4f4;">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/images.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="568.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Search.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="1168.0" layoutY="13.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="6.0" />
+                  <Separator layoutX="1.0" layoutY="73.0" prefHeight="0.0" prefWidth="1535.0" />
+                  <Button layoutX="1148.0" layoutY="76.0" mnemonicParsing="false" onAction="#why" prefHeight="50.0" prefWidth="175.0" stylesheets="@style.css" text="چرا لنوو">
+                     <styleClass>
+                        <String fx:value="head-label" />
+                        <String fx:value="button" />
+                        <String fx:value="text-field1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="back" layoutX="71.0" layoutY="81.0" mnemonicParsing="false" onAction="#backpage" prefHeight="41.0" prefWidth="30.0" style="-fx-background-color: f4f4f4;" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/return-icon-png-21.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="654.0" prefWidth="1546.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="9.0" layoutY="-53.0" prefHeight="676.0" prefWidth="1530.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1294.0" prefWidth="1506.0">
+                           <children>
+                              <GridPane layoutX="-4.0" prefHeight="1019.0" prefWidth="1510.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap1" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1001.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap1" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad 3 لنوو - Core i3-1215U UHD 8GB 256GB" textAlignment="RIGHT" wrappingWidth="313.3779602050781">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="28,300,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="1">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap2" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1002.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap2" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad Slim 3 لنوو - Core i5-13420H UHD Xe 8GB 512GB" textAlignment="RIGHT" wrappingWidth="316.2471923828125">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="31,400,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.rowIndex="1">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap5" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1005.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap5" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad Slim 3 لنوو - Ryzen 7 7730U RX Vega 8 8GB 512GB" textAlignment="RIGHT" wrappingWidth="302.8515930175781">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="32,000,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="2">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap3" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1003.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap3" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad Slim 3 15IRU8 لنوو - Core i3-1305U UHD 8GB 256GB" textAlignment="RIGHT" wrappingWidth="303.6566162109375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="26,500,000 تومن">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="3">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap4" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1004.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap4" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad Slim 3 15IRH8 لنوو - Core i7-13620H UHD 16GB 512GB" textAlignment="RIGHT" wrappingWidth="307.8890609741211">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="41,000,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap6" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1006.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap6" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ V15 G4 لنوو - Ryzen 5 7520U 610M 8GB 512GB" textAlignment="RIGHT" wrappingWidth="308.044189453125">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="29,100,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap7" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1007.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap7" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ V15 G4 لنوو - Athlon Silver 7120U 610M 8GB 256GB" textAlignment="RIGHT" wrappingWidth="298.6895751953125">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="17,200,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap8" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1008.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap8" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad 1 N4020 لنوو - Celeron N4020 UHD 600 4GB 256GB" textAlignment="RIGHT" wrappingWidth="312.42285919189453">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="17,900,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap9" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1009.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap9" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad Slim 3 15IRU8 لنوو - Core i3-1305U UHD 8GB 1TB" textAlignment="RIGHT" wrappingWidth="295.7324523925781">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="26,300,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap10" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1010.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap10" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad 1 15IGL7 لنوو - Celeron N4020 UHD 600 8GB 256GB" textAlignment="RIGHT" wrappingWidth="305.2662048339844">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="18,500,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap11" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1011.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap11" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad 1 15AMN7 لنوو - Ryzen 5 7520U 610M 8GB 256GB" textAlignment="RIGHT" wrappingWidth="303.3877258300781">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="به زودی">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="353.0" style="-fx-background-color: ffff;" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#lap12" prefHeight="194.0" prefWidth="354.0" style="-fx-background-color: ffff;" stylesheets="@style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="184.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Images/laptop/edari/1012.png" />
+                                                   </image>
+                                                   <viewport>
+                                                      <Rectangle2D />
+                                                   </viewport>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#lap12" prefHeight="38.0" prefWidth="310.0" style="-fx-background-color: ffff;" styleClass="name" stylesheets="@style.css">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="لپ تاپ IdeaPad 1 15AMN7 لنوو - Ryzen 5 7520U 610M 8GB 512GB" textAlignment="RIGHT" wrappingWidth="304.98754119873047">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                          </Button>
+                                          <Label alignment="CENTER" prefHeight="44.0" prefWidth="316.0" stylesheets="@style.css" text="28,600,000 تومان">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </padding>
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                       <GridPane.margin>
+                                          <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                 </children>
+                              </GridPane>
+                           </children></AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

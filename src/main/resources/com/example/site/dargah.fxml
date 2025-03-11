@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.site.sabad">
+<children>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <BorderPane layoutX="-4.0" prefHeight="790.0" prefWidth="1543.0" AnchorPane.bottomAnchor="0.7999999999999545" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-3.2000000000000455" AnchorPane.topAnchor="0.0">
+                <top>
+                    <AnchorPane prefHeight="0.0" prefWidth="1545.0" BorderPane.alignment="CENTER">
+                        <children>
+                            <Button fx:id="back" layoutX="72.0" layoutY="62.0" mnemonicParsing="false" onAction="#backpage" prefHeight="41.0" prefWidth="30.0" style="-fx-background-color: f4f4f4;" textAlignment="CENTER">
+                                <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../../Images/return-icon-png-21.jpg" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                        </children>
+                    </AnchorPane>
+                </top>
+               <center>
+                  <AnchorPane prefHeight="560.0" prefWidth="924.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox layoutX="471.0" prefHeight="534.0" prefWidth="436.0">
+                           <children>
+                              <VBox prefHeight="534.0" prefWidth="436.0">
+                                 <children>
+                                    <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="16.0" prefWidth="439.0" text="شماره کارت " />
+                                    <TextField fx:id="cartNumber" prefHeight="47.0" prefWidth="436.0" stylesheets="@style.css">
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                    </TextField>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="438.0" text="باید 16 کاراکتر باشد ">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label nodeOrientation="RIGHT_TO_LEFT" prefHeight="21.0" prefWidth="436.0" text="cvv2" />
+                                    <TextField fx:id="cvv2Num" prefHeight="47.0" prefWidth="436.0" stylesheets="@style.css">
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                    </TextField>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="439.0" text="باید حداقل 3 کاراکتر باشد ">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="436.0" text="رمز دوم" />
+                                    <TextField fx:id="passTwo" prefHeight="47.0" prefWidth="436.0" stylesheets="@style.css">
+                                       <styleClass>
+                                          <String fx:value="text-field1" />
+                                          <String fx:value="password" />
+                                       </styleClass>
+                                    </TextField>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="11.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="174.0" text="سال انقضاء" />
+                                          <TextField fx:id="yearE" layoutX="16.0" layoutY="40.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="202.0" stylesheets="@style.css">
+                                             <styleClass>
+                                                <String fx:value="text-field1" />
+                                                <String fx:value="password" />
+                                             </styleClass>
+                                          </TextField>
+                                          <TextField fx:id="monthE" layoutX="237.0" layoutY="40.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="202.0" stylesheets="@style.css">
+                                             <styleClass>
+                                                <String fx:value="text-field1" />
+                                                <String fx:value="password" />
+                                             </styleClass>
+                                          </TextField>
+                                          <Label layoutX="238.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="33.0" prefWidth="186.0" text="ماه انقضاء" />
+                                          <Button layoutX="260.0" layoutY="129.0" mnemonicParsing="false" onAction="#TOTAL" prefHeight="41.0" prefWidth="125.0" stylesheets="@style.css" text="خرید ">
+                                             <styleClass>
+                                                <String fx:value="login-btn1" />
+                                                <String fx:value="text" />
+                                                <String fx:value="password" />
+                                             </styleClass>
+                                          </Button>
+                                          <Label fx:id="TOTAL" layoutX="28.0" layoutY="109.0" prefHeight="71.0" prefWidth="176.0" />
+                                          <Label alignment="CENTER_RIGHT" layoutY="-7.0" prefHeight="21.0" prefWidth="433.0" text="باید حداقل  کارکتر باشد ">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label fx:id="dataDargahLbl" alignment="CENTER" prefHeight="9.0" prefWidth="438.0" />
+                                    <ImageView fitHeight="85.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets left="280.0" />
+                                       </VBox.margin>
+                                       <image>
+                                          <Image url="@../../../Images/Mellat-Beh-Pardakht-300x300.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <AnchorPane prefHeight="400.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <AnchorPane prefHeight="152.0" prefWidth="1543.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".رگاه پرداخت اینترنتی آسان پرداخت با استفاده از پروتکل امن SSL به مشتریان خود ارایه خدمت نموده و با آدرس https://asan.shaparak.ir شروع می شود. خواهشمند است به منظور جلوگیری از سوء استفاده های احتمالی پیش از ورود هرگونه اطلاعات، آدرس موجود در بخش مرورگر وب خود را با آدرس فوق مقایسه نمایید و درصورت مشاهده هر نوع مغایرت احتمالی، موضوع را با ما درمیان بگذارید." textAlignment="RIGHT" wrappingWidth="1528.6708984375" />
+                        <Text layoutX="10.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="از صحت نام فروشنده و مبلغ نمایش داده شده، اطمینان حاصل فرمایید." textAlignment="RIGHT" wrappingWidth="1522.6708984375" />
+                        <Text layoutX="9.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="برای کسب اطلاعات بیشتر، گزارش فروشگاههای مشکوک و همچنین اطلاع از وضعیت پذیرندگان اینترنتی با ما تماس بگیرید. (02183333)" textAlignment="RIGHT" wrappingWidth="1524.6708984375" />
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+        </children>
+    </AnchorPane>
+</children>
+</StackPane>
